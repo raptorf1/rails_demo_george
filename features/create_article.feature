@@ -20,6 +20,4 @@ Feature: Create articles
     When I fill in "Content" with "Excited about learning a new framework"
     And I click "Create Article" button
     Then I should see "Title can't be blank"
-
-  # Write another sad path scenario you can think of
   
