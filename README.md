@@ -1,24 +1,7 @@
-# README
+# My first Ruby on Rails project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The first baby steps with the rails framework. A very simple blog-like application with basic functionality and user authentication using [devise](https://github.com/plataformatec/devise).
 
-Things you may want to cover:
+Using the [MIT](https://opensource.org/licenses/MIT) license on this one.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Deployed using Heroku [here](https://george-april-2019.herokuapp.com/users/sign_in).
