@@ -16,6 +16,8 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'bootsnap', '>= 1.1.0', require: false
 
+gem 'devise'
+
 group :development, :test do
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
