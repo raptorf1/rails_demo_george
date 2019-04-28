@@ -29,3 +29,11 @@ Given("the following user exists") do |table|
     FactoryBot.create(:user, user)
   end    
 end
+
+Given("I click the {string} link") do |string|
+  visit root_path
+end
+
+When("I click {string} button") do |string|
+  click_button string
+end
