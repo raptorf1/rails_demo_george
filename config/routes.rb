@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
+  get 'welcome/index'
+
   devise_for :users
   
-  get 'articles/index'
-  root controller: :articles, action: :index
+  root "welcome#index"
+
+  resources :articles
 
 end
