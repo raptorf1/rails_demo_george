@@ -38,3 +38,9 @@ Scenario: User cannot add empty comments
     And I click "commit" button
     Then I should not see "reptile@gmail.com"
     
+Scenario: User cannot add any comments if email address is not of a valid format
+    When I fill "comment_commenter" with "rept  ile@gmail.com"
+    And I fill "comment_body" with "That is a very nice article"
+    And I click "commit" button
+    Then I should not see "rept ile@gmail.com"
+    And I should not see "That is a very nice article"
