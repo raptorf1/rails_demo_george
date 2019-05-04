@@ -54,3 +54,7 @@ end
 Then("I should not see {string}") do |content|
   expect(page).to have_no_content content
 end
+
+When("I fill {string} with {string}") do |commenter_field, commenter_email|
+  fill_in commenter_field, with: commenter_email
+end
