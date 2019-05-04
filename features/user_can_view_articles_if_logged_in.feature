@@ -15,7 +15,9 @@ Feature: User can view articles if logged in
     Then I fill in "user_email" with "raptor_f1@hotmail.com"
     And I fill in "user_password" with "12345678"
     And I click the "Log in" button
-    Then I should see "A breaking news item"
+    And I should see "Welcome to my 1st rails app :)"
+    Then I click "Show List of Articles"
+    And I should see "A breaking news item"
     And I should see "Some really breaking action"
     And I should see "Learn Rails 5"
     And I should see "Build awesome rails applications"

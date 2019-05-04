@@ -37,3 +37,20 @@ end
 When("I click {string} button") do |string|
   click_button string
 end
+
+Given("I am logged in as {string}") do |email|
+  user = User.find_by(email: email)
+  login_as(user, scope: :user)
+end
+
+Then("I visit the landing page") do
+  visit root_path
+end
+
+Then("I click {string}") do |string|
+  click_link string
+end
+
+Then("I should not see {string}") do |content|
+  expect(page).to have_no_content content
+end

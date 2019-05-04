@@ -2,7 +2,7 @@ Feature: Update an article
 
 As a publisher
 In order to keep my content accurate
-I would like to be able to edit my articles
+I would like to be able to delete my articles
 
 Background:
     Given the following user exists
@@ -20,10 +20,8 @@ Background:
     Then I should see "Welcome to my 1st rails app :)"
     When I click "Show List of Articles"
 
-Scenario: Successfully edit an article
+Scenario: Successfully delete an article
     Then I should see "Learn Rails 5"
-    When I click "Edit"
-    And I fill in "article_title" with "Learning Rails 5655"
-    And I click "Update Article" button
-    Then I should see "Learning Rails 5655"
-    And I should see "Build awesome rails applications"
+    When I click "Delete"
+    Then I should not see "Learning Rails 5655"
+    And I should not see "Build awesome rails applications"
