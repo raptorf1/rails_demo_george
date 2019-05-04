@@ -12,6 +12,7 @@
 <%= render @article.comments %>
 
 <h2>Add a comment:</h2>
+<h4>Provide a valid email address or leave the field blank. Your comment will not be posted otherwise.</h4>
 <%= render 'comments/form' %>
 
 <%= link_to 'Edit Article', edit_article_path(@article) %>
